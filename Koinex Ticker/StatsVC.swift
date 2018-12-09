@@ -1,32 +1,25 @@
 //
-//  ViewController.swift
+//  StatsVC.swift
 //  Koinex Ticker
 //
-//  Created by Sandeep Rana on 07/12/18.
+//  Created by Sandeep Rana on 09/12/18.
 //  Copyright © 2018 Sandeep Rana. All rights reserved.
 //
 
 import UIKit
 
-
-enum Keys: String {
-    case prices, stats, inr
-
-}
-
-class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UITableViewDataSource {
+class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!;
     @IBOutlet weak var stackViewTabsTop: UIStackView!;
 
-    private var pricesContent: [String: Any]?;
+    private var statsContent: [String: Any]?;
     private var previousPricesContent: [String: String] = [String: String](); // For historical effects
 
     var currentlySelectedPriceAssetCat: String = "";
 
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let currency = pricesContent?[currentlySelectedPriceAssetCat] {
+        if let currency = statsContent?[currentlySelectedPriceAssetCat] {
             return (currency as? [String: String])?.count ?? 0;
         }
         return 0;
@@ -34,7 +27,7 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellPricesTableViewCell.className()) as! CellPricesTableViewCell;
-        if let tempPricesContent = pricesContent?[currentlySelectedPriceAssetCat] as? [String: Any],
+        if let tempPricesContent = statsContent?[currentlySelectedPriceAssetCat] as? [String: Any],
            let key = Array(tempPricesContent.keys)[indexPath.row] as? String,
            let value = tempPricesContent[key] as? String {
             cell.updateCellData(key, value, previousValue: previousPricesContent[key]);
@@ -51,11 +44,11 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
     func onDataRefresh(withTicker: Any) {
 
         DispatchQueue.main.async {
-            if let pricesContentTemp = withTicker as? [String: Any] {
-                self.pricesContent = pricesContentTemp[Keys.prices.rawValue] as? [String: Any];
-                if self.currentlySelectedPriceAssetCat.isEmpty, let content = self.pricesContent, let allKeysInPrices = self.pricesContent?.keys {
+            if let statsContentTemp = withTicker as? [String: Any] {
+                self.statsContent = statsContentTemp[Keys.stats.rawValue] as? [String: Any];
+                if self.currentlySelectedPriceAssetCat.isEmpty, let content = self.statsContent, let allKeysInPrices = self.statsContent?.keys {
                     self.currentlySelectedPriceAssetCat = Array(allKeysInPrices).first ?? "";
-                    self.title = "Prices(\(self.currentlySelectedPriceAssetCat.uppercased()))";
+                    self.title = "Stats(\(self.currentlySelectedPriceAssetCat.uppercased()))";
                     self.addButtonsInTopTabForPriceCurrencies(tabTitles: Array(allKeysInPrices))
                 }
             }

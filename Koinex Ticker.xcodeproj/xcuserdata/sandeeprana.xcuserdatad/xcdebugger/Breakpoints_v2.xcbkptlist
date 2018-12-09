@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "updateCellData(_:_:)"
+            landmarkName = "updateCellData(_:_:previousValue:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "updateCellData(_:_:)"
+            landmarkName = "updateCellData(_:_:previousValue:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

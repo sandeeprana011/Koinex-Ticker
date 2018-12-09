@@ -13,6 +13,11 @@ extension UIViewController {
     class var storyboardID: String {
         return "\(self)"
     }
+
+    class func instantiate(fromAppStoryboard: AppStoryboard) -> Self {
+        return fromAppStoryboard.viewController(viewControllerClass: self);
+    }
+
 }
 
 extension NSObject {
