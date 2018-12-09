@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Koinex Ticker/KoinexNetworking.swift"
-            timestampString = "565954540.154779"
+            filePath = "Koinex Ticker/CellPricesTableViewCell.swift"
+            timestampString = "566040971.740674"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "ticker(method:completionHandle:errorHandler:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "updateCellData(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Koinex Ticker/KoinexNetworking.swift"
-            timestampString = "565954540.155121"
+            filePath = "Koinex Ticker/CellPricesTableViewCell.swift"
+            timestampString = "566040971.740741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "ticker(method:completionHandle:errorHandler:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "updateCellData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Koinex Ticker/PricesVC.swift"
+            timestampString = "566041597.323632"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

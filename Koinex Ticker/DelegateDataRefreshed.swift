@@ -7,6 +7,6 @@ import Foundation
 
 protocol DelegateDataRefreshed {
     func getTagName() -> String;
-    func onDataRefresh(withTicker: TickerResponse);
+    func onDataRefresh(withTicker: Any);
     func onRefreshError(withError: Error?);
 }

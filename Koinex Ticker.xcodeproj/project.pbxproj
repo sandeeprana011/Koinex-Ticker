@@ -17,6 +17,7 @@
 		0525804121BCE69E00564B37 /* KNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525804021BCE69E00564B37 /* KNavigationVC.swift */; };
 		05F2057F21BCFE1700E01047 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F2057E21BCFE1700E01047 /* AppStoryboard.swift */; };
 		05F2058121BD007200E01047 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F2058021BD007200E01047 /* Info.plist */; };
+		05F2058321BD0D1300E01047 /* CellPricesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F2058221BD0D1300E01047 /* CellPricesTableViewCell.swift */; };
 		4D7BC25340DE540A7DAD9AED /* tickerformat.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BC0F5824D8BD072F37702 /* tickerformat.json */; };
 		4D7BCA6FFBA1218B747C5106 /* DelegateDataRefreshed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		0525804021BCE69E00564B37 /* KNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNavigationVC.swift; sourceTree = "<group>"; };
 		05F2057E21BCFE1700E01047 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		05F2058021BD007200E01047 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F2058221BD0D1300E01047 /* CellPricesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPricesTableViewCell.swift; sourceTree = "<group>"; };
 		4D7BC0F5824D8BD072F37702 /* tickerformat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerformat.json; sourceTree = "<group>"; };
 		4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateDataRefreshed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +81,7 @@
 				0525804021BCE69E00564B37 /* KNavigationVC.swift */,
 				4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */,
 				05F2057E21BCFE1700E01047 /* AppStoryboard.swift */,
+				05F2058221BD0D1300E01047 /* CellPricesTableViewCell.swift */,
 			);
 			path = "Koinex Ticker";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0525802D21BADBD400564B37 /* PricesVC.swift in Sources */,
+				05F2058321BD0D1300E01047 /* CellPricesTableViewCell.swift in Sources */,
 				05F2057F21BCFE1700E01047 /* AppStoryboard.swift in Sources */,
 				0525803D21BAEC1100564B37 /* KoinexNetworking.swift in Sources */,
 				0525803F21BAEE7F00564B37 /* KoinexResponseModels.swift in Sources */,

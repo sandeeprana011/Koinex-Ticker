@@ -9,13 +9,14 @@
 import UIKit
 
 class KoinexNetworking {
-    static func ticker(method: API.Endpoints.Methods = .GET, completionHandle: @escaping (TickerResponse) -> Void, errorHandler: @escaping (Error?) -> Void) -> URLSessionDataTask? {
+    static func ticker(method: API.Endpoints.Methods = .GET, completionHandle: @escaping (Any) -> Void, errorHandler: @escaping (Error?) -> Void) -> URLSessionDataTask? {
         return API.startTask(.ticker, method: method, completionHandle: { data in
 
             do {
                 // Lets decode data into an object
-                let decoder = JSONDecoder()
-                let response = try decoder.decode(TickerResponse.self, from: data)
+                let response = try JSONSerialization.jsonObject(with: data);
+//                let decoder = JSONDecoder()
+//                let response = try decoder.decode(TickerResponse.self, from: data) //Usefull in case of similar response model
                 completionHandle(response);
             } catch {
                 if error._code == NSURLErrorCancelled {

@@ -35,3 +35,10 @@ extension UIViewController {
     }
 }
 
+extension NSObject {
+    class func className() -> String {
+        return String(describing: self);
+    }
+}
+
+

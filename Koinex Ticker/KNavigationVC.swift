@@ -15,8 +15,9 @@ class KNavigationVC: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationBar.prefersLargeTitles = true;
         startPollingFor60Seconds();
-        DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
             self.task?.cancel();
         }
     }
@@ -27,7 +28,7 @@ class KNavigationVC: UINavigationController {
             self.startPollingFor60Seconds();
             self.notifyRefreshSubscribedDelegates(with: tickerResponseModel);
         }, errorHandler: { error in
-            print(error?.localizedDescription);
+            print(error?.localizedDescription ?? "");
             self.notifyErrorOnRefreshSubscribedDelegates(withError: error);
         })
     }
@@ -38,7 +39,7 @@ class KNavigationVC: UINavigationController {
 
     @IBAction func restartPollingFor60Secs(_ sender: UIBarButtonItem) {
         startPollingFor60Seconds();
-        DispatchQueue.main.asyncAfter(deadline: .now() + 30) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
             self.task?.cancel();
         }
     }
@@ -47,7 +48,7 @@ class KNavigationVC: UINavigationController {
         self.arrOfRefreshDelegates.forEach({ ($0 as DelegateDataRefreshed).onRefreshError(withError: withError) })
     }
 
-    private func notifyRefreshSubscribedDelegates(with tickerResponse: TickerResponse) {
+    private func notifyRefreshSubscribedDelegates(with tickerResponse: Any) {
         self.arrOfRefreshDelegates.forEach({ ($0 as DelegateDataRefreshed).onDataRefresh(withTicker: tickerResponse) })
     }
 
