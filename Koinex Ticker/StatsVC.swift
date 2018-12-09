@@ -34,7 +34,7 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
             if let statsValue = StatsValue.getStatsValue(dictionary: value) {
                 if tableView == self.tableViewSidebar { // for sidebar tableview
                     let cellSidebar = tableView.dequeueReusableCell(withIdentifier: CellSidebarTableViewCell.className()) as! CellSidebarTableViewCell;
-
+                    cellSidebar.updateCellData(key, statsValue, previousValue: previousPricesContent[key])
                     return cellSidebar;
                 }
 
@@ -66,7 +66,8 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
 
             let contentOffset = self.tableView.contentOffset
             self.tableView.reloadData()
-            self.tableView.setContentOffset(contentOffset, animated: false)
+            self.tableViewSidebar.reloadData();
+            self.tableViewSidebar.setContentOffset(contentOffset, animated: false)
         }
     }
 
@@ -109,6 +110,7 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
         self.tableView.delegate = self;
         self.tableViewSidebar.dataSource = self;
         self.tableViewSidebar.delegate = self;
+
     }
 
     override func viewDidAppear(_ animated: Bool) {

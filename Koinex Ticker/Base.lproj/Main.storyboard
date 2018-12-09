@@ -198,7 +198,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sMx-ZY-EmC">
                                 <rect key="frame" x="0.0" y="0.0" width="57" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="jJs-tl-vfE"/>
                                 </constraints>
@@ -213,7 +213,7 @@
                                     </subviews>
                                 </stackView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellSidebarTableViewCell" id="P49-hL-eXG" customClass="CellSidebarTableViewCell" customModule="Koinex_Ticker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellSidebarTableViewCell" rowHeight="44" id="P49-hL-eXG" customClass="CellSidebarTableViewCell" customModule="Koinex_Ticker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="57" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P49-hL-eXG" id="Isy-Of-sBV">
@@ -255,6 +255,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="eCK-3u-Goz" secondAttribute="bottom" id="sk5-3r-cSo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="lKeyFirstLetter" destination="I3e-eh-ir1" id="yGC-Oa-qqf"/>
                                             <outlet property="lNameKey" destination="02a-Fw-Gig" id="RDF-QT-Qay"/>
@@ -303,10 +304,10 @@
                                             </constraints>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellStatsTableViewCell" id="4qZ-2f-hjK" customClass="CellStatsTableViewCell" customModule="Koinex_Ticker" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellStatsTableViewCell" rowHeight="44" id="4qZ-2f-hjK" customClass="CellStatsTableViewCell" customModule="Koinex_Ticker" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="84" width="825" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qZ-2f-hjK" id="xsd-R9-AjZ">
+                                                <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qZ-2f-hjK" id="xsd-R9-AjZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="825" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
@@ -315,6 +316,7 @@
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6g-nz-Yxx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="61.5" height="28"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -404,6 +406,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8hC-2O-Adu" secondAttribute="bottom" id="O6h-ee-YVW"/>
                                     <constraint firstItem="8hC-2O-Adu" firstAttribute="leading" secondItem="g77-if-hNb" secondAttribute="leading" id="RMn-1I-kC2"/>
