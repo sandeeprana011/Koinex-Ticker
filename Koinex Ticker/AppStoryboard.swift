@@ -29,16 +29,5 @@ enum AppStoryboard: String {
     }
 }
 
-extension UIViewController {
-    class var storyboardID: String {
-        return "\(self)"
-    }
-}
-
-extension NSObject {
-    class func className() -> String {
-        return String(describing: self);
-    }
-}
 
 

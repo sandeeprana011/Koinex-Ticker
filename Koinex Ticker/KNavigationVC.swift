@@ -23,13 +23,15 @@ class KNavigationVC: UINavigationController {
     }
 
     func startPollingFor60Seconds() {
-        self.task = KoinexNetworking.ticker(completionHandle: { tickerResponseModel in
-            print(tickerResponseModel);
-            self.startPollingFor60Seconds();
-            self.notifyRefreshSubscribedDelegates(with: tickerResponseModel);
-        }, errorHandler: { error in
-            print(error?.localizedDescription ?? "");
-            self.notifyErrorOnRefreshSubscribedDelegates(withError: error);
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.task = KoinexNetworking.ticker(completionHandle: { tickerResponseModel in
+                print(tickerResponseModel);
+                self.startPollingFor60Seconds();
+                self.notifyRefreshSubscribedDelegates(with: tickerResponseModel);
+            }, errorHandler: { error in
+                print(error?.localizedDescription ?? "");
+                self.notifyErrorOnRefreshSubscribedDelegates(withError: error);
+            })
         })
     }
 

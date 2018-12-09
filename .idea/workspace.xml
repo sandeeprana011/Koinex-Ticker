@@ -8,9 +8,8 @@
       <change beforePath="$PROJECT_DIR$/Koinex Ticker.xcodeproj/xcuserdata/sandeeprana.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker.xcodeproj/xcuserdata/sandeeprana.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Koinex Ticker/AppStoryboard.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/AppStoryboard.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Koinex Ticker/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Koinex Ticker/DelegateDataRefreshed.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/DelegateDataRefreshed.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Ticker/CellPricesTableViewCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/CellPricesTableViewCell.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Koinex Ticker/PricesVC.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Ticker/PricesVC.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Koinex_Assignment-azcozhewuozpgzfmmushkfhxfcnt/" />
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+            <state relative-caret-position="183">
+              <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -49,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koinex Ticker/AppStoryboard.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="356">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -67,26 +66,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Koinex Ticker/PricesVC.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            <state relative-caret-position="108">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Koinex Ticker/PricesVC.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Koinex Ticker/Extensions.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <folding>
+                <element signature="e#146#163#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Koinex Ticker/CellPricesTableViewCell.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+            <state relative-caret-position="255">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -95,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/Koinex Ticker/tickerformat.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8">
-              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -121,6 +132,8 @@
       <find>Koinex Assignment</find>
       <find>onDataRefresh</find>
       <find>extension</find>
+      <find>update</find>
+      <find>white</find>
     </findStrings>
     <replaceStrings>
       <replace>Decodable</replace>
@@ -147,11 +160,12 @@
         <option value="$PROJECT_DIR$/Koinex Assignment/AppStoryboard.swift" />
         <option value="$PROJECT_DIR$/Koinex Assignment/PricesVC.swift" />
         <option value="$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift" />
-        <option value="$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift" />
         <option value="$PROJECT_DIR$/Koinex Ticker/DelegateDataRefreshed.swift" />
         <option value="$PROJECT_DIR$/Koinex Ticker/AppStoryboard.swift" />
-        <option value="$PROJECT_DIR$/Koinex Ticker/PricesVC.swift" />
+        <option value="$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift" />
+        <option value="$PROJECT_DIR$/Koinex Ticker/Extensions.swift" />
         <option value="$PROJECT_DIR$/Koinex Ticker/CellPricesTableViewCell.swift" />
+        <option value="$PROJECT_DIR$/Koinex Ticker/PricesVC.swift" />
       </list>
     </option>
   </component>
@@ -228,12 +242,12 @@
       <option name="presentableId" value="Default" />
       <updated>1544201330884</updated>
       <workItem from="1544201332362" duration="14896000" />
-      <workItem from="1544341923434" duration="3954000" />
+      <workItem from="1544341923434" duration="9917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18850000" />
+    <option name="totallyTimeSpent" value="24813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
@@ -242,7 +256,7 @@
       <window_info id="Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" sideWeight="0.93582886" weight="0.2532189" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.06417112" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.06417112" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -252,7 +266,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19652407" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19652407" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -281,13 +295,6 @@
     <entry file="file://$PROJECT_DIR$/Koinex Assignment/KNavigationVC.swift" />
     <entry file="file://$PROJECT_DIR$/Koinex Assignment/AppStoryboard.swift" />
     <entry file="file://$PROJECT_DIR$/Koinex Assignment/PricesVC.swift" />
-    <entry file="file://$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="18" column="128" selection-start-line="18" selection-start-column="128" selection-end-line="18" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Koinex Ticker/DelegateDataRefreshed.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -298,35 +305,55 @@
     <entry file="file://$PROJECT_DIR$/Koinex Ticker/tickerformat.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="82" selection-start-line="51" selection-start-column="82" selection-end-line="51" selection-end-column="82" />
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Koinex Ticker/AppStoryboard.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="356">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Ticker/PricesVC.swift">
+    <entry file="appcode.project-settings://16c61ded">
+      <provider selected="true" editor-type-id="AppCode.ProjectSettings" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Ticker/KoinexNetworking.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="108">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Ticker/KNavigationVC.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Ticker/Extensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding>
+            <element signature="e#146#163#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Koinex Ticker/CellPricesTableViewCell.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Ticker/PricesVC.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
         </state>
       </provider>
     </entry>

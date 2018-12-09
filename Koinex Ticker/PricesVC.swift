@@ -17,8 +17,10 @@ enum Keys: String {
 class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!;
+    @IBOutlet weak var stackViewTabsTop: UIStackView!;
 
     private var pricesContent: [String: Any]?;
+    private var previousPricesContent: [String: String] = [String: String](); // For historical effects
 
     var currentlySelectedPriceAssetCat: String = "";
 
@@ -34,8 +36,9 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
         let cell = tableView.dequeueReusableCell(withIdentifier: CellPricesTableViewCell.className()) as! CellPricesTableViewCell;
         if let tempPricesContent = pricesContent?[currentlySelectedPriceAssetCat] as? [String: Any],
            let key = Array(tempPricesContent.keys)[indexPath.row] as? String,
-           let value = tempPricesContent[key] as? String{
-			cell.updateCellData(key ,value );
+           let value = tempPricesContent[key] as? String {
+            cell.updateCellData(key, value, previousValue: previousPricesContent[key]);
+            previousPricesContent[key] = value;
         }
         return cell;
     }
@@ -52,15 +55,48 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
                 self.pricesContent = pricesContentTemp[Keys.prices.rawValue] as? [String: Any];
                 if self.currentlySelectedPriceAssetCat.isEmpty, let content = self.pricesContent, let allKeysInPrices = self.pricesContent?.keys {
                     self.currentlySelectedPriceAssetCat = Array(allKeysInPrices).first ?? "";
+                    self.title = "Prices(\(self.currentlySelectedPriceAssetCat.uppercased()))";
+                    self.addButtonsInTopTabForPriceCurrencies(tabTitles: Array(allKeysInPrices))
                 }
             }
 
-            self.tableView.reloadData();
+            let contentOffset = self.tableView.contentOffset
+            self.tableView.reloadData()
+            self.tableView.setContentOffset(contentOffset, animated: false)
+        }
+    }
+
+    private func addButtonsInTopTabForPriceCurrencies(tabTitles: [String]) {
+        self.stackViewTabsTop.subviews.forEach({ $0.removeFromSuperview() });
+
+        for title in tabTitles {
+            let button = UIButton(type: .custom);
+            button.layer.cornerRadius = 15;
+            button.addConstraint(NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100));
+            button.backgroundColor = UIColor.black;
+            button.setSameTitleForAllStates(title: title.uppercased());
+            button.addTarget(self, action: #selector(self.selectMe(_:)), for: .touchUpInside);
+//            button.setTitleColor(UIColor.white, for: .normal);
+//            button.setTitleColor(UIColor.black, for: .selected);
+
+            button.updateForSelection();
+            self.stackViewTabsTop.addArrangedSubview(button);
         }
     }
 
     func onRefreshError(withError: Error?) {
 
+    }
+
+    @IBAction func selectMe(_ sender: UIButton) {
+        self.previousPricesContent.removeAll();
+        self.stackViewTabsTop.unselectAllButtonsInsideMe();
+        let title = sender.title(for: .normal);
+        sender.isSelected = true;
+        sender.updateForSelection();
+        self.currentlySelectedPriceAssetCat = title?.lowercased() ?? "";
+        self.title = "Prices(\(self.currentlySelectedPriceAssetCat.uppercased()))";
+        self.tableView.reloadData();
     }
 
     override func viewDidLoad() {

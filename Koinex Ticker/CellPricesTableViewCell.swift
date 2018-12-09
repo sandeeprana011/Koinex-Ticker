@@ -11,10 +11,21 @@ import UIKit
 class CellPricesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lName: UILabel!;
+    @IBOutlet weak var lFirstLetter: UILabel!;
     @IBOutlet weak var lPrice: UILabel!;
 
-    func updateCellData(_ key: String, _ value: String) {
+    func updateCellData(_ key: String, _ currentValue: String, previousValue: String?) {
         self.lName.text = key;
-        self.lPrice.text = value;
+        self.lPrice.text = currentValue;
+        if let preValueString: String = previousValue, let prValue = Double(preValueString), let curValue = Double(currentValue) {
+            if (curValue > prValue) {
+                self.lPrice.textColor = UIColor.green;
+            } else if (curValue < prValue) {
+                self.lPrice.textColor = UIColor.red;
+            } else {
+                self.lPrice.textColor = UIColor.white;
+            }
+        }
+        self.lFirstLetter.text = key.first?.description ?? "-";
     }
 }
