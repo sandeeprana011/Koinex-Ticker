@@ -53,3 +53,20 @@ extension UIStackView {
         });
     }
 }
+
+extension UILabel {
+    func setColoredValues(_ valueCurrent: String?, _ valuePrevious: String?) {
+		if valueCurrent == nil {
+			self.text = "-"
+			return;
+		}
+		
+        if (Double(valueCurrent!) ?? 0) > (Double(valuePrevious ?? valueCurrent!) ?? 0) {
+            self.textColor = UIColor.green;
+        } else if (Double(valueCurrent!) ?? 0) < (Double(valuePrevious ?? valueCurrent!) ?? 0) {
+            self.textColor = UIColor.red;
+        } else {
+            self.textColor = UIColor.white;
+        }
+    }
+}
