@@ -16,6 +16,8 @@ enum Keys: String {
 
 class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UITableViewDataSource {
 
+    var refreshControl: UIRefreshControl = UIRefreshControl();
+
     @IBOutlet weak var tableView: UITableView!;
     @IBOutlet weak var stackViewTabsTop: UIStackView!;
 
@@ -49,7 +51,7 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
     }
 
     func onDataRefresh(withTicker: Any) {
-
+        self.refreshControl.endRefreshing();
         DispatchQueue.main.async {
             if let pricesContentTemp = withTicker as? [String: Any] {
                 self.pricesContent = pricesContentTemp[Keys.prices.rawValue] as? [String: Any];
@@ -62,6 +64,7 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
 
             let contentOffset = self.tableView.contentOffset
             self.tableView.reloadData()
+			
             self.tableView.setContentOffset(contentOffset, animated: false)
         }
     }
@@ -85,7 +88,7 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
     }
 
     func onRefreshError(withError: Error?) {
-
+        self.refreshControl.endRefreshing();
     }
 
     @IBAction func selectMe(_ sender: UIButton) {
@@ -103,6 +106,17 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
         super.viewDidLoad()
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
+		self.refreshControl.tintColor = UIColor.white;
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh");
+        self.refreshControl.addTarget(self, action: #selector(self.restartPollingFor60Secs(_:)), for: .valueChanged);
+        self.tableView.addSubview(self.refreshControl);
+    }
+
+    @objc func restartPollingFor60Secs(_ sender: Any) {
+        (self.navigationController as? KNavigationVC)?.startPollingFor60Seconds()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
+            (self.navigationController as? KNavigationVC)?.task?.cancel();
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -117,6 +131,10 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
 
     @IBAction func onClickStats(_ sender: UIBarButtonItem) {
         let vcStats = StatsVC.instantiate(fromAppStoryboard: .Main);
+        if let statsContentTemp = (self.navigationController as? KNavigationVC)?.tickerResponseModel as? [String: Any] {
+            vcStats.statsContent = statsContentTemp[Keys.stats.rawValue] as? [String: Any];
+        }
+
         self.navigationController?.pushViewController(vcStats, animated: true);
     }
 }

@@ -14,7 +14,7 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
     @IBOutlet weak var tableViewSidebar: UITableView!;
     @IBOutlet weak var stackViewTabsTop: UIStackView!;
 
-    private var statsContent: [String: Any]?;
+    var statsContent: [String: Any]?;
     private var previousPricesContent: [String: StatsValue] = [String: StatsValue](); // For historical effects
 
     var currentlySelectedPriceAssetCat: String = "";

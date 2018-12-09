@@ -22,10 +22,13 @@ class KNavigationVC: UINavigationController {
         }
     }
 
+    var tickerResponseModel: Any?;
+
     func startPollingFor60Seconds() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.task = KoinexNetworking.ticker(completionHandle: { tickerResponseModel in
                 print(tickerResponseModel);
+                self.tickerResponseModel = tickerResponseModel;
                 self.startPollingFor60Seconds();
                 self.notifyRefreshSubscribedDelegates(with: tickerResponseModel);
             }, errorHandler: { error in
@@ -39,12 +42,6 @@ class KNavigationVC: UINavigationController {
         self.arrOfRefreshDelegates = self.arrOfRefreshDelegates.filter({ $0.getTagName() != withDelegate.getTagName() });
     }
 
-    @IBAction func restartPollingFor60Secs(_ sender: UIBarButtonItem) {
-        startPollingFor60Seconds();
-        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
-            self.task?.cancel();
-        }
-    }
 
     private func notifyErrorOnRefreshSubscribedDelegates(withError: Error?) {
         self.arrOfRefreshDelegates.forEach({ ($0 as DelegateDataRefreshed).onRefreshError(withError: withError) })
