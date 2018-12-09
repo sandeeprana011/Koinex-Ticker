@@ -6,6 +6,8 @@
 //  Copyright © 2018 Sandeep Rana. All rights reserved.
 //
 
+import Foundation
+
 
 class TickerResponse: Codable {
     var prices: Prices?
@@ -86,7 +88,19 @@ class Stats: Codable {
 }
 
 class StatsValue: Codable {
-    var highestBid, lowestAsk, lastTradedPrice, min24Hrs: String?
-    var max24Hrs, vol24Hrs, currencyFullForm, currencyShortForm: String?
-    var perChange, tradeVolume: String?
+    static func getStatsValue(dictionary: Any) -> StatsValue? {
+        if let dict = dictionary as? [String: String] {
+            do {
+                let data = try JSONSerialization.data(withJSONObject: dictionary)
+				return try JSONDecoder().decode(StatsValue.self, from: data);
+            } catch {
+                return nil;
+            }
+        }
+		return nil;
+    }
+
+    var highest_bid, lowest_ask, last_traded_price, min_24hrs: String?
+    var max_24hrs, vol_24hrs, currency_full_form, currency_short_form: String?
+    var per_change, trade_volume: String?
 }

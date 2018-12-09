@@ -11,29 +11,40 @@ import UIKit
 class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!;
+    @IBOutlet weak var tableViewSidebar: UITableView!;
     @IBOutlet weak var stackViewTabsTop: UIStackView!;
 
     private var statsContent: [String: Any]?;
-    private var previousPricesContent: [String: String] = [String: String](); // For historical effects
+    private var previousPricesContent: [String: StatsValue] = [String: StatsValue](); // For historical effects
 
     var currentlySelectedPriceAssetCat: String = "";
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let currency = statsContent?[currentlySelectedPriceAssetCat] {
-            return (currency as? [String: String])?.count ?? 0;
+            return (currency as? [String: Any])?.count ?? 0;
         }
         return 0;
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellPricesTableViewCell.className()) as! CellPricesTableViewCell;
+
         if let tempPricesContent = statsContent?[currentlySelectedPriceAssetCat] as? [String: Any],
            let key = Array(tempPricesContent.keys)[indexPath.row] as? String,
-           let value = tempPricesContent[key] as? String {
-            cell.updateCellData(key, value, previousValue: previousPricesContent[key]);
-            previousPricesContent[key] = value;
+           let value = tempPricesContent[key] {
+            if let statsValue = StatsValue.getStatsValue(dictionary: value) {
+                if tableView == self.tableViewSidebar { // for sidebar tableview
+                    let cellSidebar = tableView.dequeueReusableCell(withIdentifier: CellSidebarTableViewCell.className()) as! CellSidebarTableViewCell;
+
+                    return cellSidebar;
+                }
+
+                let cell = tableView.dequeueReusableCell(withIdentifier: CellStatsTableViewCell.className()) as! CellStatsTableViewCell;
+
+                cell.updateCellData(key, statsValue, previousValue: previousPricesContent[key]);
+                previousPricesContent[key] = statsValue;
+            }
         }
-        return cell;
+        return UITableViewCell(frame: self.stackViewTabsTop.frame);
     }
 
     func getTagName() -> String {
@@ -96,6 +107,8 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
         super.viewDidLoad()
         self.tableView.dataSource = self;
         self.tableView.delegate = self;
+        self.tableViewSidebar.dataSource = self;
+        self.tableViewSidebar.delegate = self;
     }
 
     override func viewDidAppear(_ animated: Bool) {
