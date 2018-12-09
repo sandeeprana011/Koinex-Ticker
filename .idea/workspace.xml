@@ -3,9 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="95bfef96-1452-44f9-ae0b-b315112d8744" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/xcuserdata/sandeeprana.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/xcuserdata/sandeeprana.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Koinex Assignment/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Koinex Assignment/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/xcuserdata/sandeeprana.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/project.xcworkspace/xcuserdata/sandeeprana.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/xcuserdata/sandeeprana.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/xcuserdata/sandeeprana.xcuserdatad/xcschemes/Koinex Assignment.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment.xcodeproj/xcuserdata/sandeeprana.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/Assets.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/KoinexNetworking.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/KoinexResponseModels.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/ViewController.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Koinex Assignment/tickerformat.json" beforeDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Koinex_Assignment-azcozhewuozpgzfmmushkfhxfcnt/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,63 +30,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_EAA904B4-EEFE-4097-8521-A1DFEF843FE6" />
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Koinex Assignment/AppDelegate.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Koinex Assignment/tickerformat.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-              <folding>
-                <element signature="e#713#1001#0" />
-                <element signature="e#1016#1227#0" />
-                <element signature="e#1243#1702#0" />
-                <element signature="e#1732#13746#0" />
-                <element signature="e#13763#17944#0" />
-                <element signature="e#17959#20979#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Koinex Assignment/ViewController.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexResponseModels.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexNetworking.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,6 +63,8 @@
       <find>Double</find>
       <find>String</find>
       <find>struct</find>
+      <find>Info.plist</find>
+      <find>Koinex Assignment</find>
     </findStrings>
     <replaceStrings>
       <replace>Decodable</replace>
@@ -94,6 +72,7 @@
       <replace>String</replace>
       <replace>StatsValue</replace>
       <replace>class</replace>
+      <replace>Koinex Ticker</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -103,10 +82,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Koinex Assignment/package.json" />
-        <option value="$PROJECT_DIR$/Koinex Assignment/tickerformat.json" />
-        <option value="$PROJECT_DIR$/Koinex Assignment/ViewController.swift" />
         <option value="$PROJECT_DIR$/Koinex Assignment/KoinexResponseModels.swift" />
         <option value="$PROJECT_DIR$/Koinex Assignment/KoinexNetworking.swift" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/tickerformat.json" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/ViewController.swift" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/DelegateDataRefreshed.swift" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/KNavigationVC.swift" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/AppStoryboard.swift" />
+        <option value="$PROJECT_DIR$/Koinex Assignment/PricesVC.swift" />
       </list>
     </option>
   </component>
@@ -127,12 +110,12 @@
           <expand>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Koinex Assignment" type="1d218c8b:XcodeProjectNode" />
+              <item name="Koinex Ticker" type="1d218c8b:XcodeProjectNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Koinex Assignment" type="1d218c8b:XcodeProjectNode" />
-              <item name="Koinex Assignment" type="fcab9f18:XcodeViewNode" />
+              <item name="Koinex Ticker" type="1d218c8b:XcodeProjectNode" />
+              <item name="Koinex Ticker" type="fcab9f18:XcodeViewNode" />
             </path>
           </expand>
           <select />
@@ -142,7 +125,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Koinex Assignment" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Koinex Ticker.xcodeproj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -160,7 +145,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Koinex Assignment" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Koinex Assignment" TARGET_NAME="Koinex Assignment" CONFIG_NAME="Debug" SCHEME_NAME="Koinex Assignment" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Koinex Assignment" RUN_TARGET_NAME="Koinex Assignment" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name="Koinex Assignment" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Koinex Ticker" TARGET_NAME="Koinex Ticker" CONFIG_NAME="Debug" SCHEME_NAME="Koinex Assignment" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Koinex Ticker" RUN_TARGET_NAME="Koinex Ticker" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -180,25 +165,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544201330884</updated>
-      <workItem from="1544201332362" duration="9206000" />
+      <workItem from="1544201332362" duration="14896000" />
+      <workItem from="1544341923434" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9206000" />
+    <option name="totallyTimeSpent" value="14983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986631" visible="true" weight="0.24964234" />
-      <window_info id="Structure" order="1" sideWeight="0.5013369" side_tool="true" visible="true" weight="0.24964234" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.328877" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="0" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info id="Structure" order="2" sideWeight="0.93582886" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.06417112" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -206,24 +187,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.19652407" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.1874106" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Koinex Assignment/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/AppDelegate.swift" />
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9F2000/4.1.2/arm64/iphoneos11.4/Foundation/Foundation.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -231,41 +210,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Assignment/tickerformat.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding>
-            <element signature="e#713#1001#0" />
-            <element signature="e#1016#1227#0" />
-            <element signature="e#1243#1702#0" />
-            <element signature="e#1732#13746#0" />
-            <element signature="e#13763#17944#0" />
-            <element signature="e#17959#20979#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Assignment/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexResponseModels.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="74" column="28" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexNetworking.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexResponseModels.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/KoinexNetworking.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/tickerformat.json" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/ViewController.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/DelegateDataRefreshed.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/KNavigationVC.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/AppStoryboard.swift" />
+    <entry file="file://$PROJECT_DIR$/Koinex Assignment/PricesVC.swift" />
   </component>
 </project>

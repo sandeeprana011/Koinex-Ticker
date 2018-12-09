@@ -8,26 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0525802B21BADBD400564B37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525802A21BADBD400564B37 /* AppDelegate.swift */; };
-		0525802D21BADBD400564B37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525802C21BADBD400564B37 /* ViewController.swift */; };
+		0525802D21BADBD400564B37 /* PricesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525802C21BADBD400564B37 /* PricesVC.swift */; };
 		0525803021BADBD400564B37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0525802E21BADBD400564B37 /* Main.storyboard */; };
 		0525803221BADBD500564B37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0525803121BADBD500564B37 /* Assets.xcassets */; };
 		0525803521BADBD500564B37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0525803321BADBD500564B37 /* LaunchScreen.storyboard */; };
 		0525803D21BAEC1100564B37 /* KoinexNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525803C21BAEC1100564B37 /* KoinexNetworking.swift */; };
 		0525803F21BAEE7F00564B37 /* KoinexResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525803E21BAEE7F00564B37 /* KoinexResponseModels.swift */; };
+		0525804121BCE69E00564B37 /* KNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0525804021BCE69E00564B37 /* KNavigationVC.swift */; };
+		05F2057F21BCFE1700E01047 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F2057E21BCFE1700E01047 /* AppStoryboard.swift */; };
+		05F2058121BD007200E01047 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F2058021BD007200E01047 /* Info.plist */; };
 		4D7BC25340DE540A7DAD9AED /* tickerformat.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D7BC0F5824D8BD072F37702 /* tickerformat.json */; };
+		4D7BCA6FFBA1218B747C5106 /* DelegateDataRefreshed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0525802721BADBD400564B37 /* Koinex Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koinex Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0525802721BADBD400564B37 /* Koinex Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Koinex Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0525802A21BADBD400564B37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0525802C21BADBD400564B37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0525802C21BADBD400564B37 /* PricesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricesVC.swift; sourceTree = "<group>"; };
 		0525802F21BADBD400564B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0525803121BADBD500564B37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0525803421BADBD500564B37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0525803621BADBD500564B37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0525803C21BAEC1100564B37 /* KoinexNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinexNetworking.swift; sourceTree = "<group>"; };
 		0525803E21BAEE7F00564B37 /* KoinexResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinexResponseModels.swift; sourceTree = "<group>"; };
+		0525804021BCE69E00564B37 /* KNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNavigationVC.swift; sourceTree = "<group>"; };
+		05F2057E21BCFE1700E01047 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		05F2058021BD007200E01047 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7BC0F5824D8BD072F37702 /* tickerformat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickerformat.json; sourceTree = "<group>"; };
+		4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateDataRefreshed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +51,7 @@
 		0525801E21BADBD400564B37 = {
 			isa = PBXGroup;
 			children = (
-				0525802921BADBD400564B37 /* Koinex Assignment */,
+				0525802921BADBD400564B37 /* Koinex Ticker */,
 				0525802821BADBD400564B37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,33 +59,36 @@
 		0525802821BADBD400564B37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0525802721BADBD400564B37 /* Koinex Assignment.app */,
+				0525802721BADBD400564B37 /* Koinex Ticker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0525802921BADBD400564B37 /* Koinex Assignment */ = {
+		0525802921BADBD400564B37 /* Koinex Ticker */ = {
 			isa = PBXGroup;
 			children = (
 				0525802A21BADBD400564B37 /* AppDelegate.swift */,
-				0525802C21BADBD400564B37 /* ViewController.swift */,
+				0525802C21BADBD400564B37 /* PricesVC.swift */,
 				0525802E21BADBD400564B37 /* Main.storyboard */,
 				0525803121BADBD500564B37 /* Assets.xcassets */,
 				0525803321BADBD500564B37 /* LaunchScreen.storyboard */,
-				0525803621BADBD500564B37 /* Info.plist */,
 				4D7BC0F5824D8BD072F37702 /* tickerformat.json */,
+				05F2058021BD007200E01047 /* Info.plist */,
 				0525803C21BAEC1100564B37 /* KoinexNetworking.swift */,
 				0525803E21BAEE7F00564B37 /* KoinexResponseModels.swift */,
+				0525804021BCE69E00564B37 /* KNavigationVC.swift */,
+				4D7BC121275DF21C993DCBA1 /* DelegateDataRefreshed.swift */,
+				05F2057E21BCFE1700E01047 /* AppStoryboard.swift */,
 			);
-			path = "Koinex Assignment";
+			path = "Koinex Ticker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0525802621BADBD400564B37 /* Koinex Assignment */ = {
+		0525802621BADBD400564B37 /* Koinex Ticker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0525803921BADBD500564B37 /* Build configuration list for PBXNativeTarget "Koinex Assignment" */;
+			buildConfigurationList = 0525803921BADBD500564B37 /* Build configuration list for PBXNativeTarget "Koinex Ticker" */;
 			buildPhases = (
 				0525802321BADBD400564B37 /* Sources */,
 				0525802421BADBD400564B37 /* Frameworks */,
@@ -88,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = "Koinex Assignment";
-			productName = "Koinex Assignment";
-			productReference = 0525802721BADBD400564B37 /* Koinex Assignment.app */;
+			name = "Koinex Ticker";
+			productName = "Koinex Ticker";
+			productReference = 0525802721BADBD400564B37 /* Koinex Ticker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0525802221BADBD400564B37 /* Build configuration list for PBXProject "Koinex Assignment" */;
+			buildConfigurationList = 0525802221BADBD400564B37 /* Build configuration list for PBXProject "Koinex Ticker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0525802621BADBD400564B37 /* Koinex Assignment */,
+				0525802621BADBD400564B37 /* Koinex Ticker */,
 			);
 		};
 /* End PBXProject section */
@@ -134,6 +144,7 @@
 				0525803521BADBD500564B37 /* LaunchScreen.storyboard in Resources */,
 				0525803221BADBD500564B37 /* Assets.xcassets in Resources */,
 				0525803021BADBD400564B37 /* Main.storyboard in Resources */,
+				05F2058121BD007200E01047 /* Info.plist in Resources */,
 				4D7BC25340DE540A7DAD9AED /* tickerformat.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,10 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0525802D21BADBD400564B37 /* ViewController.swift in Sources */,
+				0525802D21BADBD400564B37 /* PricesVC.swift in Sources */,
+				05F2057F21BCFE1700E01047 /* AppStoryboard.swift in Sources */,
 				0525803D21BAEC1100564B37 /* KoinexNetworking.swift in Sources */,
 				0525803F21BAEE7F00564B37 /* KoinexResponseModels.swift in Sources */,
 				0525802B21BADBD400564B37 /* AppDelegate.swift in Sources */,
+				0525804121BCE69E00564B37 /* KNavigationVC.swift in Sources */,
+				4D7BCA6FFBA1218B747C5106 /* DelegateDataRefreshed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +308,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNXHE58JZT;
-				INFOPLIST_FILE = "Koinex Assignment/Info.plist";
+				INFOPLIST_FILE = "Koinex Ticker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNXHE58JZT;
-				INFOPLIST_FILE = "Koinex Assignment/Info.plist";
+				INFOPLIST_FILE = "Koinex Ticker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0525802221BADBD400564B37 /* Build configuration list for PBXProject "Koinex Assignment" */ = {
+		0525802221BADBD400564B37 /* Build configuration list for PBXProject "Koinex Ticker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0525803721BADBD500564B37 /* Debug */,
@@ -336,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0525803921BADBD500564B37 /* Build configuration list for PBXNativeTarget "Koinex Assignment" */ = {
+		0525803921BADBD500564B37 /* Build configuration list for PBXNativeTarget "Koinex Ticker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0525803A21BADBD500564B37 /* Debug */,

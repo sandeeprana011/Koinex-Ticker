@@ -1,6 +1,6 @@
 //
 //  KoinexResponseModels.swift
-//  Koinex Assignment
+//  Koinex Ticker
 //
 //  Created by Sandeep Rana on 07/12/18.
 //  Copyright © 2018 Sandeep Rana. All rights reserved.
