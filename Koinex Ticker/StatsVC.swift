@@ -42,6 +42,7 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
 
                 cell.updateCellData(key, statsValue, previousValue: previousPricesContent[key]);
                 previousPricesContent[key] = statsValue;
+                return cell;
             }
         }
         return UITableViewCell(frame: self.stackViewTabsTop.frame);
@@ -67,7 +68,6 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
             let contentOffset = self.tableView.contentOffset
             self.tableView.reloadData()
             self.tableViewSidebar.reloadData();
-            self.tableViewSidebar.setContentOffset(contentOffset, animated: false)
         }
     }
 
@@ -110,7 +110,22 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
         self.tableView.delegate = self;
         self.tableViewSidebar.dataSource = self;
         self.tableViewSidebar.delegate = self;
+    }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 44;
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView == self.tableView {
+            self.tableViewSidebar.setContentOffset(scrollView.contentOffset, animated: true);
+        }
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        if scrollView == self.tableViewSidebar {
+            self.tableView.setContentOffset(scrollView.contentOffset, animated: true);
+        }
     }
 
     override func viewDidAppear(_ animated: Bool) {

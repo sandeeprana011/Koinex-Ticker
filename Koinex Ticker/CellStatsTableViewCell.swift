@@ -23,6 +23,7 @@ class CellStatsTableViewCell: UITableViewCell {
 
 
     func updateCellData(_ key: String, _ currentValue: StatsValue, previousValue: StatsValue?) {
+        self.backgroundColor = UIColor.black;
         self.highest_bid.text = currentValue.highest_bid;
         self.lowest_ask.text = currentValue.lowest_ask;
         self.last_traded_price.text = currentValue.last_traded_price;
