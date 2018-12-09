@@ -81,12 +81,11 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
             button.backgroundColor = UIColor.black;
             button.setSameTitleForAllStates(title: title.uppercased());
             button.addTarget(self, action: #selector(self.selectMe(_:)), for: .touchUpInside);
-//            button.setTitleColor(UIColor.white, for: .normal);
-//            button.setTitleColor(UIColor.black, for: .selected);
-
             button.updateForSelection();
             self.stackViewTabsTop.addArrangedSubview(button);
         }
+        (self.stackViewTabsTop.subviews.first as? UIButton)?.isSelected = true;
+        (self.stackViewTabsTop.subviews.first as? UIButton)?.updateForSelection();
     }
 
     func onRefreshError(withError: Error?) {
@@ -100,8 +99,9 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
         sender.isSelected = true;
         sender.updateForSelection();
         self.currentlySelectedPriceAssetCat = title?.lowercased() ?? "";
-        self.title = "Prices(\(self.currentlySelectedPriceAssetCat.uppercased()))";
+        self.title = "Stats(\(self.currentlySelectedPriceAssetCat.uppercased()))";
         self.tableView.reloadData();
+        self.tableViewSidebar.reloadData();
     }
 
     override func viewDidLoad() {
@@ -124,6 +124,14 @@ class StatsVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UIT
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         if scrollView == self.tableViewSidebar {
+            if !tableView.isDecelerating {
+                self.tableView.setContentOffset(scrollView.contentOffset, animated: true);
+            }
+        }
+    }
+
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if scrollView == tableViewSidebar, !decelerate {
             self.tableView.setContentOffset(scrollView.contentOffset, animated: true);
         }
     }

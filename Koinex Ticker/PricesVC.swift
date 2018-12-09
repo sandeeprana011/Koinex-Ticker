@@ -76,12 +76,12 @@ class PricesVC: UIViewController, DelegateDataRefreshed, UITableViewDelegate, UI
             button.backgroundColor = UIColor.black;
             button.setSameTitleForAllStates(title: title.uppercased());
             button.addTarget(self, action: #selector(self.selectMe(_:)), for: .touchUpInside);
-//            button.setTitleColor(UIColor.white, for: .normal);
-//            button.setTitleColor(UIColor.black, for: .selected);
-
             button.updateForSelection();
             self.stackViewTabsTop.addArrangedSubview(button);
         }
+        (self.stackViewTabsTop.subviews.first as? UIButton)?.isSelected = true;
+        (self.stackViewTabsTop.subviews.first as? UIButton)?.updateForSelection();
+
     }
 
     func onRefreshError(withError: Error?) {
